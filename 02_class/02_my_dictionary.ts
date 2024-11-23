@@ -21,7 +21,11 @@ class Dict {
 		console.log(`${term} is deleted`)
 	}
 	update(term:string, def:string):void {
-		this.words[term] = def
+		if (this.words[term]) {
+			this.words[term] = def
+		} else {
+			console.log(`{term} is not exist`);
+		}
 	}
 	showAll():void {
 		for(const [key, value]of Object.entries(this.words)) {
