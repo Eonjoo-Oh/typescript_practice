@@ -1,0 +1,9 @@
+{
+	"include": ["src"],
+	"compilerOptions": {
+		"outDir": "build",
+		"target": "es6",
+		"moduleResolution": "node"
+		"lib": ["ES6", "DOM"] //타입스크립트에게 어떤 lib를 사용할건지 알려줌
+	}
+}
